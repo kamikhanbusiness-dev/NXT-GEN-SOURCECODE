@@ -1,6 +1,7 @@
 import { Hero } from "@/components/home/Hero";
-import { Faq, FeaturesGrid, ProcessSteps, QuickQuiz, Reviews, ServicesCards, SplitSection, StatsBand } from "@/components/home/sections";
+import { BrandStrip, Faq, FeaturesGrid, ProcessSteps, QuickQuiz, Reviews, ServicesCards, SplitSection, StatsBand } from "@/components/home/sections";
 import { faqs } from "@/content";
+import { Container } from "@/components/ui/primitives";
 
 // FAQ structured data helps the questions appear as rich results.
 const faqJsonLd = {
@@ -39,6 +40,12 @@ export default function HomePage() {
           control of your indoor climate.
         </p>
       </SplitSection>
+
+      <section className="bg-white pt-16 sm:pt-20">
+        <Container>
+          <BrandStrip />
+        </Container>
+      </section>
 
       <SplitSection id="servicing" title="Air Conditioning Repairs & Servicing" scene="service">
         <p>

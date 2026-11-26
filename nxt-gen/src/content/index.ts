@@ -22,7 +22,7 @@ export const services: Service[] = [
     summary: "Wall-mounted, multi-split, ducted and cassette systems, sized properly for each room.",
     body: "We survey every room, calculate the real cooling load and recommend the smallest, quietest system that will do the job. Installs are usually completed in a single day with neat, colour-matched trunking and no mess left behind.",
     benefits: ["Free home survey & heat-load calculation", "Most homes fitted in one day", "Up to 7-year manufacturer warranty", "A+++ energy-efficient units"],
-    from: "£1,450",
+    from: "£1,600",
   },
   {
     slug: "servicing",
@@ -47,9 +47,9 @@ export const services: Service[] = [
     icon: "home",
     title: "Home Air Conditioning",
     summary: "Bedrooms, lofts, home offices and conservatories that stay comfortable all year.",
-    body: "Modern air conditioners are also highly efficient heat pumps, so the same unit that keeps you cool in July can heat the room in January for a fraction of the cost of electric heaters.",
+    body: "The same unit that keeps you cool in July can also warm the room in January, using far less electricity than plug-in heaters.",
     benefits: ["Whisper-quiet bedroom units", "Heating & cooling in one", "Smart Wi-Fi control", "Discreet, tidy installs"],
-    from: "£1,450",
+    from: "£1,600",
   },
   {
     slug: "commercial",
@@ -59,15 +59,6 @@ export const services: Service[] = [
     body: "We design and install systems for businesses of every size, with out-of-hours fitting to avoid disruption and planned maintenance contracts to keep everything running.",
     benefits: ["Out-of-hours installation", "TM44 & F-Gas compliance", "Planned maintenance contracts", "Server & comms room cooling"],
     from: "£2,200",
-  },
-  {
-    slug: "heat-pumps",
-    icon: "leaf",
-    title: "Air-to-Air Heat Pumps",
-    summary: "Low-carbon heating that can cut running costs compared with electric heaters.",
-    body: "Every system we fit can heat as well as cool. For every 1kW of electricity used, a heat pump can deliver 3–4kW of heat — a big saving for rooms that rely on plug-in heaters.",
-    benefits: ["Up to 4× more efficient than electric heaters", "One system for all seasons", "Lower carbon footprint", "Ideal for extensions & garden rooms"],
-    from: "£1,450",
   },
 ];
 
@@ -119,13 +110,13 @@ export const features = [
   { icon: "card", title: "Finance & payment", text: "Flexible ways to pay, with finance options available on new systems." },
   { icon: "briefcase", title: "Guaranteed work", text: "Up to 7-year manufacturer warranties and our own workmanship guarantee." },
   { icon: "shield", title: "Fully accredited", text: "F-Gas, REFCOM and NICEIC accredited, and fully insured for every job." },
-  { icon: "leaf", title: "Sustainable practices", text: "A+++ efficient heat pumps and responsible refrigerant recovery and recycling." },
+  { icon: "leaf", title: "Sustainable practices", text: "A+++ energy-efficient systems and responsible refrigerant recovery and recycling." },
 ] as const satisfies readonly { icon: IconName; title: string; text: string }[];
 
 export const faqs = [
   {
     q: "How much does air conditioning cost in Nottingham?",
-    a: "A single wall-mounted system for one room typically costs between £1,450 and £2,200 fully installed, depending on the unit size, brand and how far the outdoor unit is from the indoor unit. Use our online estimator for a tailored range.",
+    a: "A single wall-mounted system for one room typically costs from £1,600 fully installed, depending on the unit size, brand and how far the outdoor unit is from the indoor unit. Use our online estimator for a tailored range.",
   },
   {
     q: "How long does installation take?",
@@ -137,7 +128,7 @@ export const faqs = [
   },
   {
     q: "Can air conditioning heat my home too?",
-    a: "Yes. Every system we install is a reversible heat pump, providing efficient heating in winter as well as cooling in summer.",
+    a: "Yes. Every system we install can run in reverse, providing efficient heating in winter as well as cooling in summer.",
   },
   {
     q: "Is air conditioning noisy?",
@@ -149,12 +140,12 @@ export const faqs = [
   },
 ] as const;
 
-export const brands = ["Daikin", "Mitsubishi Electric", "Fujitsu", "Toshiba", "LG", "Samsung", "Panasonic"] as const;
+/** Equipment brands NXTGEN fit (client, 25 Nov 2026). */
+export const brands = ["Samsung", "Daikin", "Mitsubishi", "Hitachi"] as const;
 
 export const posts = [
   { title: "How to choose the right size air conditioner for your room", excerpt: "kW, BTU and why bigger isn't better — a plain-English guide to sizing.", tag: "Buying guide", read: "6 min" },
   { title: "Air conditioning running costs in the UK: what to expect", excerpt: "Real-world running costs for bedrooms, living rooms and offices.", tag: "Running costs", read: "5 min" },
-  { title: "Can an air conditioner replace my heating?", excerpt: "How air-to-air heat pumps compare to gas and electric heating.", tag: "Heat pumps", read: "7 min" },
   { title: "Keeping a loft conversion cool in summer", excerpt: "Why lofts overheat and the best ways to fix it for good.", tag: "Home comfort", read: "4 min" },
   { title: "Does air conditioning need planning permission?", excerpt: "Permitted development rules explained for homeowners.", tag: "Regulations", read: "5 min" },
   { title: "Office air conditioning: a guide for small businesses", excerpt: "Comfort, compliance and keeping staff productive.", tag: "Commercial", read: "8 min" },

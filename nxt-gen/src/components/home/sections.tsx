@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 import { site } from "@/config/site";
-import { faqs, features, processSteps, services, testimonials } from "@/content";
+import { brands, faqs, features, processSteps, services, testimonials } from "@/content";
 import { Icon, type IconName } from "@/components/ui/Icon";
 import { ButtonLink, Container, SectionHeading, revealDelay } from "@/components/ui/primitives";
 import { Badge } from "@/components/ui/badge";
@@ -177,9 +177,14 @@ export function ServicesCards() {
           }
           intro="Design, installation, servicing and repairs — all delivered by our own certified engineers."
         />
-        <ul className="mt-14 grid gap-7 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-14 flex flex-wrap justify-center gap-7">
           {services.map((s, i) => (
-            <li key={s.slug} data-reveal="up" style={revealDelay((i % 3) * 120)}>
+            <li
+              key={s.slug}
+              data-reveal="up"
+              style={revealDelay((i % 3) * 120)}
+              className="w-full sm:w-[calc(50%-0.875rem)] lg:w-[calc((100%-3.5rem)/3)]"
+            >
               <Link href={`/services#${s.slug}`} className="group block h-full rounded-2xl focus-visible:ring-4 focus-visible:ring-ring/60 focus-visible:outline-none">
                 <Card className="relative h-full gap-0 rounded-2xl border-2 border-transparent bg-muted p-8 has-data-[slot=card-footer]:pb-8 text-base ring-0 transition-all duration-300 group-hover:-translate-y-1 group-hover:border-brand-400 group-hover:bg-white group-hover:shadow-xl">
                   <span className="absolute -top-10 -right-10 size-32 rounded-full bg-brand-100 transition-transform duration-500 group-hover:scale-[2.5]" aria-hidden="true" />
@@ -207,6 +212,27 @@ export function ServicesCards() {
         </ul>
       </Container>
     </section>
+  );
+}
+
+/** The equipment brands the client installs (text badges until logo artwork is supplied). */
+export function BrandStrip({ className = "" }: { className?: string }) {
+  return (
+    <div className={`rounded-[2rem] bg-[#f7f8fa] px-6 py-10 text-center ${className}`}>
+      <p className="font-display text-lg font-bold text-navy-900">The equipment we fit</p>
+      <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
+        {brands.map((b, i) => (
+          <li
+            key={b}
+            data-reveal="pop"
+            style={revealDelay(i * 60)}
+            className="font-display text-2xl font-extrabold text-navy-900/50 transition-colors hover:text-navy-900"
+          >
+            {b}
+          </li>
+        ))}
+      </ul>
+    </div>
   );
 }
 

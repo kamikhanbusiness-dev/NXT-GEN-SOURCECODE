@@ -23,8 +23,14 @@ export type UnitSizeKw = (typeof unitSizesKw)[number];
 export const pricingConfig = {
   currency: "GBP",
   pricesIncludeVat: true,
-  /** Final figures are rounded to the nearest multiple of this (£). */
+  /** Final figures are
+   *  rounded to the nearest multiple of this (£). */
   roundTo: 50,
+  /**
+   * Lowest installation price we quote (£). The estimate never shows less than
+   * this. Set to 0 to turn the floor off. Client asked for £1,600 (25 Nov 2026).
+   */
+  minimumInstallPrice: 1600,
 
   /* ── Cooling-load calculation ───────────────────────────────────────── */
   cooling: {
@@ -37,14 +43,30 @@ export const pricingConfig = {
     /** Safety margin applied after all multipliers (1.1 = +10%). */
     safetyMargin: 1.1,
     insulation: {
-      good: { label: "Good", hint: "Modern build, double glazing, insulated loft", multiplier: 0.85 },
-      average: { label: "Average", hint: "Typical 1960s–2000s home", multiplier: 1.0 },
-      poor: { label: "Poor", hint: "Older property, single glazing, solid walls", multiplier: 1.2 },
+      good: {
+        label: "Good",
+        hint: "Modern build, double glazing, insulated loft",
+        multiplier: 0.85,
+      },
+      average: {
+        label: "Average",
+        hint: "Typical 1960s–2000s home",
+        multiplier: 1.0,
+      },
+      poor: {
+        label: "Poor",
+        hint: "Older property, single glazing, solid walls",
+        multiplier: 1.2,
+      },
     },
     sunExposure: {
       low: { label: "Low", hint: "North-facing or shaded", multiplier: 0.9 },
       medium: { label: "Medium", hint: "Some direct sun", multiplier: 1.0 },
-      high: { label: "High", hint: "South/west-facing, large windows", multiplier: 1.2 },
+      high: {
+        label: "High",
+        hint: "South/west-facing, large windows",
+        multiplier: 1.2,
+      },
     },
   },
 
@@ -75,7 +97,8 @@ export const pricingConfig = {
   unitTypes: {
     wallSplit: {
       label: "Wall-mounted split",
-      description: "The most popular choice for homes. One indoor unit per outdoor unit.",
+      description:
+        "The most popular choice for homes. One indoor unit per outdoor unit.",
       maxIndoorUnitsPerSystem: 1,
       systemBase: [650, 850] as Range,
       perIndoorUnit: {
@@ -88,7 +111,8 @@ export const pricingConfig = {
     },
     multiSplit: {
       label: "Multi-split",
-      description: "Up to five indoor units running from one outdoor unit — ideal for several rooms.",
+      description:
+        "Up to five indoor units running from one outdoor unit — ideal for several rooms.",
       maxIndoorUnitsPerSystem: 5,
       systemBase: [1600, 2200] as Range,
       perIndoorUnit: {
@@ -100,7 +124,8 @@ export const pricingConfig = {
     },
     ducted: {
       label: "Ducted system",
-      description: "Hidden in the ceiling void with discreet grilles. Best for new builds and refurbs.",
+      description:
+        "Hidden in the ceiling void with discreet grilles. Best for new builds and refurbs.",
       maxIndoorUnitsPerSystem: 6,
       systemBase: [3200, 4200] as Range,
       perIndoorUnit: {
@@ -113,7 +138,8 @@ export const pricingConfig = {
     },
     cassette: {
       label: "Ceiling cassette",
-      description: "Flush ceiling units that spread air four ways. Common in offices and shops.",
+      description:
+        "Flush ceiling units that spread air four ways. Common in offices and shops.",
       maxIndoorUnitsPerSystem: 1,
       systemBase: [900, 1200] as Range,
       perIndoorUnit: {
@@ -127,7 +153,12 @@ export const pricingConfig = {
 
   /** Installation scenario. `perSystem` is added once per outdoor unit; `multiplier` scales equipment + labour. */
   installType: {
-    new: { label: "New installation", hint: "No existing air conditioning", perSystem: [0, 0] as Range, multiplier: 1.0 },
+    new: {
+      label: "New installation",
+      hint: "No existing air conditioning",
+      perSystem: [0, 0] as Range,
+      multiplier: 1.0,
+    },
     replacement: {
       label: "Replace an existing system",
       hint: "Includes safe refrigerant recovery & disposal",
@@ -147,8 +178,14 @@ export const pricingConfig = {
 
   /** Where the outdoor unit is mounted. Charged per system. */
   outdoorMounting: {
-    wallLow: { label: "Wall-mounted, low (below 2m)", perSystem: [0, 0] as Range },
-    wallHigh: { label: "Wall-mounted, high (2 – 4m)", perSystem: [120, 250] as Range },
+    wallLow: {
+      label: "Wall-mounted, low (below 2m)",
+      perSystem: [0, 0] as Range,
+    },
+    wallHigh: {
+      label: "Wall-mounted, high (2 – 4m)",
+      perSystem: [120, 250] as Range,
+    },
     ground: { label: "On the ground", perSystem: [60, 140] as Range },
     roof: { label: "Flat roof", perSystem: [250, 500] as Range },
   },
@@ -163,8 +200,14 @@ export const pricingConfig = {
 
   /** Electrical supply for each outdoor unit. Charged per system. */
   electrics: {
-    existing: { label: "Spare circuit / spur available", perSystem: [0, 0] as Range },
-    newCircuit: { label: "Needs a new dedicated circuit", perSystem: [220, 380] as Range },
+    existing: {
+      label: "Spare circuit / spur available",
+      perSystem: [0, 0] as Range,
+    },
+    newCircuit: {
+      label: "Needs a new dedicated circuit",
+      perSystem: [220, 380] as Range,
+    },
     unsure: { label: "Not sure", perSystem: [0, 380] as Range },
   },
 
@@ -181,7 +224,12 @@ export const pricingConfig = {
    *  - "annual" → priced per indoor unit per year, shown separately as a recurring cost
    */
   addOns: {
-    wifi: { label: "Wi-Fi smart control", hint: "Control every unit from your phone", unit: "perIndoorUnit", price: [60, 120] as Range },
+    wifi: {
+      label: "Wi-Fi smart control",
+      hint: "Control every unit from your phone",
+      unit: "perIndoorUnit",
+      price: [60, 120] as Range,
+    },
     condensatePump: {
       label: "Condensate pump",
       hint: "Needed where water can't drain by gravity",
@@ -217,4 +265,5 @@ export type AddOn = keyof PricingConfig["addOns"];
 export type PropertyType = keyof PricingConfig["propertyMultiplier"];
 
 /** Typed `Object.keys` for the config maps above. */
-export const keysOf = <T extends object>(obj: T) => Object.keys(obj) as (keyof T & string)[];
+export const keysOf = <T extends object>(obj: T) =>
+  Object.keys(obj) as (keyof T & string)[];

@@ -5,6 +5,7 @@
  * inside the same rounded frame once the client supplies photos.
  */
 import type { ReactNode } from "react";
+import { site } from "@/config/site";
 
 export type SceneName = "remote" | "angled" | "outdoor" | "service" | "van" | "office";
 
@@ -234,8 +235,8 @@ const scenes: Record<SceneName, { label: string; body: ReactNode }> = {
         <text x="62" y="368" fontSize="13" fontWeight="700" letterSpacing="4" fill="#64748b" fontFamily="var(--font-roboto)">
           AIR CONDITIONING
         </text>
-        <text x="62" y="455" fontSize="20" fontWeight="700" fill="#ffffff" fontFamily="var(--font-roboto)">
-          nxtgen-aircon.co.uk
+        <text x="62" y="398" fontSize="16" fontWeight="700" fill="#1c2033" fontFamily="var(--font-roboto)">
+          {site.domain}
         </text>
         {[130, 470].map((cx) => (
           <g key={cx}>

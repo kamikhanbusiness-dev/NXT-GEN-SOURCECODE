@@ -10,12 +10,15 @@ export const site = {
   tagline: "Air conditioning installation, servicing & repair in Nottingham",
   description:
     "F-Gas certified air conditioning installers in Nottingham. Fixed-price home and commercial AC installation, servicing and repairs across Nottinghamshire. Get an instant online estimate.",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "http://localhost:3000",
+  /** The company's registered domain (client, 26 Nov 2026). */
+  domain: "nxtgenairconltd.com",
+  /** Canonical origin for metadata, sitemap and JSON-LD. Override per environment with NEXT_PUBLIC_SITE_URL. */
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://nxtgenairconltd.com",
 
   // Contact — placeholders until confirmed by the client
   phone: "0115 000 0000",
   phoneHref: "tel:+441150000000",
-  email: "hello@nxtgen-aircon.co.uk",
+  email: "sales@nxtgenairconltd.com", // client's address (26 Nov 2026); confirm it is the public one (Q-04)
   whatsapp: "", // e.g. "https://wa.me/447000000000" — leave empty to hide
 
   address: {

@@ -16,7 +16,6 @@ const sceneFor: Record<string, SceneName> = {
   repairs: "outdoor",
   domestic: "remote",
   commercial: "office",
-  "heat-pumps": "outdoor",
 };
 
 export default function ServicesPage() {

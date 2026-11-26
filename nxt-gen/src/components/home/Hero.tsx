@@ -24,7 +24,7 @@ export function Hero() {
 
       <div className="relative mx-auto max-w-6xl px-4 text-center sm:px-6">
         <p className="animate-fade-up font-display text-base font-semibold text-navy-900 sm:text-2xl">
-          Your trusted air con, heat pump &amp; servicing experts for Nottingham
+          Your trusted air conditioning installation &amp; servicing experts for Nottingham
         </p>
         <h1 className="mt-5 animate-fade-up font-display text-[2.6rem] leading-[1.08] font-extrabold tracking-tight [animation-delay:100ms] sm:text-6xl lg:text-[5.25rem]">
           Trusted Air Conditioning Specialists For Nottingham &amp; Nottinghamshire

@@ -1,6 +1,5 @@
 import type { Metadata } from "next";
 import { site } from "@/config/site";
-import { brands } from "@/content";
 import { Icon } from "@/components/ui/Icon";
 import {
   Container,
@@ -10,6 +9,7 @@ import {
 } from "@/components/ui/primitives";
 import { Scene } from "@/components/illustrations/Scenes";
 import {
+  BrandStrip,
   CtaBand,
   FeaturesGrid,
   Reviews,
@@ -125,23 +125,7 @@ export default function AboutPage() {
             ))}
           </ul>
 
-          <div className="mt-20 rounded-[2rem] bg-[#f7f8fa] px-6 py-10 text-center">
-            <p className="font-display text-lg font-bold text-navy-900">
-              Approved installers of leading brands
-            </p>
-            <ul className="mt-6 flex flex-wrap items-center justify-center gap-x-10 gap-y-4">
-              {brands.map((b, i) => (
-                <li
-                  key={b}
-                  data-reveal="pop"
-                  style={revealDelay(i * 60)}
-                  className="font-display text-xl font-extrabold text-navy-900/40 transition-colors hover:text-navy-900"
-                >
-                  {b}
-                </li>
-              ))}
-            </ul>
-          </div>
+          <BrandStrip className="mt-20" />
         </Container>
       </section>
 

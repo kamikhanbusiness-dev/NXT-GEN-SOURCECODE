@@ -189,6 +189,14 @@ export function calculateEstimate(input: EstimateInput): Estimate {
   if (input.electrics === "unsure" || input.pipework === "unsure") notes.push("“Not sure” answers widen the range until our surveyor confirms.");
   if (rooms.some((r) => r.loadKw > 10)) notes.push("Very large spaces usually suit ducted or cassette systems — we'll advise at survey.");
 
+  // Never quote below the minimum installation price.
+  let installRange = roundRange(total);
+  const floor = P.minimumInstallPrice;
+  if (floor > 0 && installRange[0] < floor) {
+    installRange = [floor, Math.max(floor, installRange[1])];
+    notes.push(`Installations start from ${formatGBP(floor)}.`);
+  }
+
   return {
     rooms,
     indoorUnitCount,
@@ -196,7 +204,7 @@ export function calculateEstimate(input: EstimateInput): Estimate {
     totalKw,
     totalBtu,
     lines: lines.map((l) => ({ ...l, range: roundRange(l.range) })),
-    installRange: roundRange(total),
+    installRange,
     annualRange: annualRange && roundRange(annualRange),
     notes,
   };

@@ -29,7 +29,7 @@ export const areas: Area[] = [
     driveTime: "10 minutes",
     intro:
       "Loft conversions and south-facing extensions in West Bridgford can overheat quickly in summer. We size systems properly so you get steady comfort without an oversized, noisy unit.",
-    highlights: ["Loft & extension cooling", "Neat, colour-matched trunking", "Heat-pump heating for winter"],
+    highlights: ["Loft & extension cooling", "Neat, colour-matched trunking", "Efficient heating for winter"],
   },
   {
     slug: "beeston",
