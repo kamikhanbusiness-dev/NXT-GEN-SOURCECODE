@@ -1,0 +1,29 @@
+{
+  "name": "nxtgen-reels",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "studio": "remotion studio src/index.ts",
+    "voice": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --env-file-if-exists=.env scripts/voice.ts",
+    "render": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/render.ts",
+    "build:all": "npm run voice && npm run render",
+    "sfx": "node scripts/sfx.ts",
+    "setup:whisper": "node -e \"const w = await import('@remotion/install-whisper-cpp'); await w.installWhisperCpp({ to: 'whisper.cpp', version: '1.5.5' }); await w.downloadWhisperModel({ model: 'base.en', folder: 'whisper.cpp' });\" --input-type=module"
+  },
+  "dependencies": {
+    "@remotion/bundler": "^4.0.536",
+    "@remotion/cli": "^4.0.536",
+    "@remotion/google-fonts": "^4.0.536",
+    "@remotion/renderer": "^4.0.536",
+    "react": "^19.3.0",
+    "react-dom": "^19.3.0",
+    "remotion": "^4.0.536"
+  },
+  "devDependencies": {
+    "@remotion/install-whisper-cpp": "^4.0.536",
+    "@types/node": "^20.19.43",
+    "@types/react": "^19.3.0",
+    "typescript": "^5.9.3"
+  }
+}

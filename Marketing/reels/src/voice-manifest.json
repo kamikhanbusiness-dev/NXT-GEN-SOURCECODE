@@ -1,0 +1,678 @@
+{
+  "Reel2-RealPrices": {
+    "model": "gemini-3.8-flash-tts",
+    "style": "Say in a warm, friendly local Nottingham East Midlands accent, upbeat and energetic like a local social media advert, with a clear pause between each line",
+    "segments": [
+      {
+        "text": "How much does air con actually cost in Nottingham?",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/0.wav",
+        "seconds": 3.63875,
+        "words": [
+          0.016,
+          0.346,
+          0.606,
+          0.946,
+          1.196,
+          1.586,
+          2.126,
+          2.496,
+          2.636
+        ]
+      },
+      {
+        "text": "No call us for a price. Here are the real numbers.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/1.wav",
+        "seconds": 3.40325,
+        "words": [
+          0.048,
+          0.208,
+          0.578,
+          0.698,
+          0.988,
+          1.028,
+          1.888,
+          2.178,
+          2.518,
+          2.858,
+          4.108
+        ]
+      },
+      {
+        "text": "One room, fully fitted, from £1,450 to around two thousand two hundred.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/2.wav",
+        "seconds": 5.860875,
+        "words": [
+          0.044,
+          0.334,
+          0.724,
+          1.214,
+          1.874,
+          3.514,
+          4.234,
+          4.284,
+          4.764,
+          4.764,
+          4.764,
+          5.364
+        ]
+      },
+      {
+        "text": "More rooms? One outdoor unit can run up to five.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/3.wav",
+        "seconds": 4.1445,
+        "words": [
+          0.034,
+          0.404,
+          1.154,
+          1.365,
+          1.844,
+          2.115,
+          2.324,
+          2.534,
+          2.694,
+          2.944
+        ]
+      },
+      {
+        "text": "Already have air con? Servicing from £95. Repairs from £89.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/4.wav",
+        "seconds": 5.613458333333333,
+        "words": [
+          0.023,
+          0.503,
+          0.923,
+          1.063,
+          1.583,
+          2.263,
+          2.583,
+          3.553,
+          4.303,
+          4.593
+        ]
+      },
+      {
+        "text": "Our free survey locks in a fixed price. No surprises.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/5.wav",
+        "seconds": 3.37175,
+        "words": [
+          0.138,
+          0.408,
+          0.538,
+          0.988,
+          1.298,
+          1.388,
+          1.668,
+          1.858,
+          2.428,
+          2.588
+        ]
+      },
+      {
+        "text": "Check your exact price in two minutes. Link in bio.",
+        "voice": "Zephyr",
+        "file": "voice/Reel2-RealPrices/6.wav",
+        "seconds": 3.2367916666666665,
+        "words": [
+          0.042,
+          0.092,
+          0.412,
+          0.982,
+          1.302,
+          1.422,
+          1.662,
+          2.302,
+          2.622,
+          2.782
+        ]
+      }
+    ]
+  },
+  "Reel3-ThreeMistakes": {
+    "model": "gemini-3.8-flash-tts",
+    "style": "Say in a warm, friendly local Nottingham East Midlands accent, upbeat and energetic like a local social media advert, with a clear pause between each line",
+    "segments": [
+      {
+        "text": "Three mistakes that make air con cost you double.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/0.wav",
+        "seconds": 4.0605416666666665,
+        "words": [
+          0.08,
+          0.93,
+          1.38,
+          1.78,
+          2.21,
+          2.48,
+          2.84,
+          3.2,
+          3.48
+        ]
+      },
+      {
+        "text": "One. The wrong size. Too big is noisy. Too small can't keep up.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/1.wav",
+        "seconds": 4.573958333333334,
+        "words": [
+          0.148,
+          0.679,
+          0.778,
+          1.198,
+          1.798,
+          2.038,
+          2.308,
+          2.438,
+          2.979,
+          3.218,
+          3.808,
+          4.148,
+          4.629
+        ]
+      },
+      {
+        "text": "We size every room, so you get the quietest unit for the job.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/2.wav",
+        "seconds": 3.5965833333333332,
+        "words": [
+          0.243,
+          0.333,
+          0.673,
+          1.093,
+          1.453,
+          1.603,
+          1.683,
+          1.843,
+          2.043,
+          2.653,
+          2.963,
+          3.143,
+          3.323
+        ]
+      },
+      {
+        "text": "Two. Uncertified installers. By law, they must be F-Gas certified.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/3.wav",
+        "seconds": 5.028583333333334,
+        "words": [
+          0,
+          0.289,
+          1.119,
+          2.369,
+          2.419,
+          2.829,
+          3.099,
+          3.439,
+          3.679,
+          3.949
+        ]
+      },
+      {
+        "text": "Three. Never servicing it. A dirty system can use up to 30% more energy.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/4.wav",
+        "seconds": 4.533375,
+        "words": [
+          0.114,
+          0.534,
+          0.804,
+          1.414,
+          1.804,
+          1.804,
+          2.144,
+          2.544,
+          2.744,
+          2.944,
+          3.074,
+          3.214,
+          3.754,
+          3.944
+        ]
+      },
+      {
+        "text": "NXTGEN. F-Gas certified, fixed prices, and up to a seven-year warranty.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/5.wav",
+        "seconds": 4.537416666666667,
+        "words": [
+          0.187,
+          0.387,
+          1.017,
+          1.647,
+          2.197,
+          2.657,
+          2.947,
+          3.107,
+          3.287,
+          3.447,
+          3.867
+        ]
+      },
+      {
+        "text": "Save this for later, and grab your free estimate. Link in bio.",
+        "voice": "Puck",
+        "file": "voice/Reel3-ThreeMistakes/6.wav",
+        "seconds": 3.5627916666666666,
+        "words": [
+          0,
+          0,
+          0.245,
+          0.315,
+          0.685,
+          0.845,
+          1.155,
+          1.365,
+          1.625,
+          2.515,
+          2.785,
+          2.965
+        ]
+      }
+    ]
+  },
+  "Reel4-LocalProof": {
+    "model": "gemini-3.8-flash-tts",
+    "style": "Say in a warm, friendly local Nottingham East Midlands accent, upbeat and energetic like a local social media advert, with a clear pause between each line",
+    "segments": [
+      {
+        "text": "Why are so many Nottingham homes switching to NXTGEN?",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/0.wav",
+        "seconds": 4.066541666666667,
+        "words": [
+          0.08,
+          0.38,
+          0.93,
+          0.93,
+          1.42,
+          2.48,
+          2.8,
+          3.38,
+          3.83
+        ]
+      },
+      {
+        "text": "Over 1,500 systems installed across Nottinghamshire.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/1.wav",
+        "seconds": 3.4964583333333334,
+        "words": [
+          0,
+          0.236,
+          0.816,
+          1.286,
+          1.846,
+          2.226
+        ]
+      },
+      {
+        "text": "Sarah, in West Bridgford: our loft bedroom was unbearable. Done in a day, and it's whisper quiet.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/2.wav",
+        "seconds": 7.2047083333333335,
+        "words": [
+          0,
+          1.235,
+          1.395,
+          2.075,
+          2.675,
+          2.725,
+          3.015,
+          3.535,
+          3.785,
+          4.635,
+          5.065,
+          5.095,
+          5.135,
+          5.355,
+          5.715,
+          5.915,
+          6.375
+        ]
+      },
+      {
+        "text": "James, in the city centre: the online estimate was spot on with the final price.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/3.wav",
+        "seconds": 4.968791666666666,
+        "words": [
+          0,
+          0.54,
+          0.62,
+          0.85,
+          1.16,
+          1.92,
+          2.01,
+          2.49,
+          3.11,
+          3.34,
+          3.72,
+          3.87,
+          4.18,
+          4.49,
+          4.79
+        ]
+      },
+      {
+        "text": "Helen, in Long Eaton: our conservatory is finally usable all year round.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/4.wav",
+        "seconds": 4.839916666666666,
+        "words": [
+          0.29,
+          0.39,
+          0.54,
+          1.04,
+          1.28,
+          2.03,
+          2.41,
+          2.56,
+          3.2,
+          3.54,
+          3.76,
+          4.09
+        ]
+      },
+      {
+        "text": "Rated 4.9 stars on Google. F-Gas certified. Fully insured.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/5.wav",
+        "seconds": 4.707416666666667,
+        "words": [
+          0,
+          0.424,
+          0.734,
+          1.254,
+          1.474,
+          2.244,
+          2.524,
+          3.764,
+          3.804
+        ]
+      },
+      {
+        "text": "Join your neighbours. Get your instant estimate today. Link in bio.",
+        "voice": "Zephyr",
+        "file": "voice/Reel4-LocalProof/6.wav",
+        "seconds": 4.267916666666666,
+        "words": [
+          0,
+          0.158,
+          0.248,
+          1.418,
+          1.478,
+          1.838,
+          2.328,
+          2.928,
+          3.318,
+          3.318,
+          3.828
+        ]
+      }
+    ]
+  },
+  "Reel5-BeatTheRush": {
+    "model": "gemini-3.8-flash-tts",
+    "style": "Say in a warm, friendly local Nottingham East Midlands accent, upbeat and energetic like a local social media advert, with a clear pause between each line",
+    "segments": [
+      {
+        "text": "Remember trying to sleep last summer?",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/0.wav",
+        "seconds": 1.87975,
+        "words": [
+          0.042,
+          0.462,
+          0.762,
+          0.872,
+          1.222,
+          1.492
+        ]
+      },
+      {
+        "text": "Windows open. Fan on full. Still roasting at three a.m.",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/1.wav",
+        "seconds": 4.246541666666666,
+        "words": [
+          0,
+          0.638,
+          1.328,
+          1.458,
+          1.638,
+          2.188,
+          2.858,
+          3.378,
+          3.628,
+          3.828
+        ]
+      },
+      {
+        "text": "When the heat hits, installers across Nottingham get booked up fast.",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/2.wav",
+        "seconds": 3.833125,
+        "words": [
+          0,
+          0.053,
+          0.163,
+          0.493,
+          1.083,
+          1.573,
+          2.043,
+          2.533,
+          2.873,
+          3.243,
+          3.353
+        ]
+      },
+      {
+        "text": "So here's the smart move. Book now, while install dates are wide open.",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/3.wav",
+        "seconds": 4.400041666666667,
+        "words": [
+          0,
+          0.439,
+          0.589,
+          0.819,
+          1.199,
+          1.839,
+          2.039,
+          2.309,
+          2.619,
+          3.049,
+          3.379,
+          3.539,
+          3.779
+        ]
+      },
+      {
+        "text": "Whisper-quiet bedroom units, fitted in a day, that keep you warm this winter too.",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/4.wav",
+        "seconds": 4.372875,
+        "words": [
+          0.033,
+          0.743,
+          1.213,
+          1.553,
+          1.953,
+          2.083,
+          2.143,
+          2.343,
+          2.613,
+          2.993,
+          3.123,
+          3.353,
+          3.623,
+          4.033
+        ]
+      },
+      {
+        "text": "Next summer, sleep cool. Free survey, fixed price. Link in bio.",
+        "voice": "Puck",
+        "file": "voice/Reel5-BeatTheRush/5.wav",
+        "seconds": 5.62,
+        "words": [
+          0.12,
+          0.88,
+          1.39,
+          1.92,
+          2.87,
+          2.97,
+          3.73,
+          3.99,
+          4.59,
+          4.83,
+          5.02
+        ]
+      }
+    ]
+  },
+  "Reel1-WinterHeating": {
+    "model": "gemini-3.8-flash-tts",
+    "style": "Say in a warm, friendly local Nottingham East Midlands accent, upbeat and energetic like a local social media advert, with a clear pause between each line",
+    "segments": [
+      {
+        "text": "Nottingham, stop heating your home with plug-in heaters.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/0.wav",
+        "seconds": 2.97,
+        "words": [
+          0.08,
+          0.81,
+          0.95,
+          1.3,
+          1.51,
+          1.67,
+          1.87,
+          2.24
+        ]
+      },
+      {
+        "text": "They're one of the most expensive ways to heat a room.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/1.wav",
+        "seconds": 2.65775,
+        "words": [
+          0,
+          0.177,
+          0.357,
+          0.477,
+          0.657,
+          0.937,
+          1.507,
+          1.867,
+          2.047,
+          2.407,
+          2.497
+        ]
+      },
+      {
+        "text": "Here's what most people don't know. Air conditioning heats too.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/2.wav",
+        "seconds": 3.7332916666666667,
+        "words": [
+          0.056,
+          0.446,
+          0.696,
+          0.976,
+          1.386,
+          1.706,
+          2.236,
+          2.496,
+          3.546,
+          4.166
+        ]
+      },
+      {
+        "text": "One kilowatt of electricity in. Up to four kilowatts of heat out.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/3.wav",
+        "seconds": 4.0568333333333335,
+        "words": [
+          0.209,
+          0.449,
+          1.089,
+          1.249,
+          2.209,
+          2.299,
+          2.499,
+          2.619,
+          2.859,
+          3.649,
+          3.739,
+          4.069
+        ]
+      },
+      {
+        "text": "Cool in July. Warm in January. One system, all year round.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/4.wav",
+        "seconds": 4.050333333333334,
+        "words": [
+          0.03,
+          0.31,
+          0.48,
+          1.12,
+          1.35,
+          1.51,
+          2.48,
+          2.85,
+          3.4,
+          3.66,
+          4.23
+        ]
+      },
+      {
+        "text": "NXTGEN fit it in a day, from £1,450, right across Nottingham.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/5.wav",
+        "seconds": 5.16425,
+        "words": [
+          0.545,
+          0.805,
+          1.265,
+          1.265,
+          1.415,
+          1.745,
+          1.835,
+          3.305,
+          3.665,
+          4.065,
+          4.545
+        ]
+      },
+      {
+        "text": "Get your instant estimate in two minutes. Tap the link in our bio.",
+        "voice": "Puck",
+        "file": "voice/Reel1-WinterHeating/6.wav",
+        "seconds": 3.596125,
+        "words": [
+          0.096,
+          0.206,
+          0.346,
+          0.616,
+          1.196,
+          1.356,
+          1.576,
+          2.346,
+          2.486,
+          2.636,
+          2.846,
+          2.946,
+          3.096
+        ]
+      }
+    ]
+  }
+}
